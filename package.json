@@ -1,6 +1,6 @@
 {
-  "name": "suitespot-login-insomnia-plugin",
-  "version": "1.0.0",
+  "name": "insomnia-plugin-suitespot-login",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
