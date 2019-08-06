@@ -20,8 +20,8 @@ function hash(value, algorithm = 'sha256', encoding = 'hex') {
  * between a user-provided MIN and MAX
  */
 module.exports.templateTags = [{
-  name: 'suitespot-login',
-  displayName: 'SuiteSpot login',
+  name: 'suitespotLogin',
+  displayName: 'SuiteSpot Login Request',
   description: 'Login Prompts for SuiteSpot',
   args: [],
   async run(context) {
@@ -29,7 +29,6 @@ module.exports.templateTags = [{
     const username = await context.app.prompt('Username', {
       label: 'Username',
       defaultValue: 'john.doe@suitespot.io',
-      submitName: 'username',
       cancelable: true,
     })
 
@@ -38,7 +37,6 @@ module.exports.templateTags = [{
     const password = await context.app.prompt('Password', {
       label: 'Password',
       defaultValue: 'password',
-      submitName: 'password',
       cancelable: true,
     })
 
